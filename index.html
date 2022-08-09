@@ -5,20 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Odin Giphy-api</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <img src="#" alt="">
-  <script>
-    const img = document.querySelector('img');
-    const API_KEY = 'REPLACE ME';
-    let searchTerm = 'cats';
-    fetch(`https://api.giphy.com/v1/gifs/translate?api_key=${API_KEY}&s=${searchTerm}`, {mode: 'cors'})
-      .then(function(response) {
-        return response.json();
-      })
-      .then(function(response) {
-        img.src = response.data.images.original.url;
-      });
-  </script>
+  <div id="page-container">
+    <h1>Odin Giphy-api</h1>
+    <form action="#">
+      <label for="search">Search Term
+        <input type="search" placeholder="Funny cats" id="search" name="search" required>
+        <button>Search</button>
+      </label>
+    </form>
+    <div id="error-message-container" class="hidden">ERROR</div>
+    <img src="#" alt="">
+
+  </div>
+
 </body>
 </html>

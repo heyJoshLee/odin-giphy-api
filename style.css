@@ -1,0 +1,46 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+h1 {
+  margin: 0 0 40px 0;
+}
+
+#page-container {
+  text-align: center;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  color: snow;
+  height: 100%;
+  padding: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 5px 20px; 
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+form { 
+  margin-bottom: 20px;
+}
+
+input[type="search"] {
+  text-align: center;
+}
